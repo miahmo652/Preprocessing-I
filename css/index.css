@@ -135,10 +135,52 @@ body {
   height: 100%;
 }
 body {
-  background-color: #4fc3f1;
+  background: radial-gradient(circle, #0696e9, white);
 }
 html {
   background-image: url("../../images/img1.jpg");
-  width: 1224px;
+  width: 1124px;
   margin: 0 auto;
+}
+h1 {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: 900;
+  font-size: 27px;
+}
+h3 {
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 25px 30px;
+  padding: 2%;
+}
+header {
+  padding: 3%;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+.button {
+  background-color: lightcyan;
+  border-radius: 5px;
+  color: black;
+  width: 20%;
+  padding: 0.5em;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #8f8ff1;
+  transform: scale(1.1);
+  transition: all ease 500ms;
 }
