@@ -49,6 +49,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -63,7 +64,8 @@ table {
 }
 
 html, body {
-    height: auto;
+	height: auto;
+	font-family: 'Oxanium', cursive;
 }
 body{
 	background:radial-gradient(circle, rgb(6, 150, 233), white);
@@ -109,7 +111,7 @@ h3 {
 		@media (max-width: 500px){
 		
 			flex-direction: column;
-			text-align: center;
+			align-items: center;
 		}
 	}
 	
@@ -129,13 +131,15 @@ h3 {
 	width: 20%;
 	padding: .5em;
 	text-decoration: none;
+
+	&:hover{
+		background-color: rgb(143, 143, 241);
+		transform: scale(1.1);
+		transition: all ease 500ms;
+	}
 	
   }
-  .button:hover{
-	  background-color: rgb(143, 143, 241);
-	  transform: scale(1.1);
- 	 transition: all ease 500ms;
-  }
+  
   .aboutone{
 	  display: flex;
 	  flex-direction: row;

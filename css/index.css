@@ -127,12 +127,20 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Oxanium';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Oxanium Regular'), local('Oxanium-Regular'), url(https://fonts.gstatic.com/s/oxanium/v1/RrQQboN_4yJ0JmiMe2LE1A.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
 }
 html,
 body {
   height: auto;
+  font-family: 'Oxanium', cursive;
 }
 body {
   background: radial-gradient(circle, #0696e9, white);
@@ -174,7 +182,7 @@ header nav a {
 @media (max-width: 500px) {
   header nav {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 }
 .bottle {
