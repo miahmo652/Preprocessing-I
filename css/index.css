@@ -177,6 +177,16 @@ header nav a {
     text-align: center;
   }
 }
+.bottle {
+  width: 40%;
+  height: auto;
+  margin-left: 30%;
+}
+@media (max-width: 500px) {
+  .bottle {
+    display: none;
+  }
+}
 .button {
   background-color: lightcyan;
   border-radius: 5px;
@@ -252,7 +262,7 @@ header nav a {
   margin-left: 5%;
 }
 .sect3 {
-  margin: 5%;
+  padding: 5%;
 }
 @media (max-width: 500px) {
   html {
