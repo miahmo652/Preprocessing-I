@@ -52,9 +52,18 @@ table {
 * {
     box-sizing: border-box;
 }
+@primary-color: lightcyan;
+.change(){
+	margin: 3%;
+	padding: 2%;
+}
+.fix(){
+		font-size: 20px;
+		font-weight: 700;
+}
 
 html, body {
-    height: 100%;
+    height: auto;
 }
 body{
 	background:radial-gradient(circle, rgb(6, 150, 233), white);
@@ -63,7 +72,9 @@ body{
 html {
 	background-image: url("../../images/img1.jpg");
     width: 1124px;
-    margin: 0 auto;
+	margin: 0 auto;
+
+	
 }
 	
 h1 {
@@ -73,8 +84,7 @@ h1 {
 }
 h3 {
 	font-family: Verdana, sans-serif;
-	font-size: 20px;
-	font-weight: 700;
+	.fix();
 }
 
 .title{
@@ -96,18 +106,80 @@ h3 {
 		
 			
 		}
+		@media (max-width: 500px){
+		
+			flex-direction: column;
+			text-align: center;
+		}
 	}
+	
  }
  .button {
-	background-color: lightcyan;  
+	background-color:@primary-color;  
 	border-radius: 5px;
 	color: black;
 	width: 20%;
 	padding: .5em;
 	text-decoration: none;
+	
   }
   .button:hover{
 	  background-color: rgb(143, 143, 241);
 	  transform: scale(1.1);
  	 transition: all ease 500ms;
   }
+  .aboutone{
+	  display: flex;
+	  flex-direction: row;
+	  .subone{
+		  width: 60%;
+		  padding: 5%;
+	  }
+	  .sub {
+		  width: 40%;
+		  padding: 5%;
+		  margin-left: 20%;
+		  text-align: center;
+		  h3{
+			  background-color: lightblue;
+			  .change();
+		  }
+		  p{
+			  font-size: 17px;
+			  background-color: lightblue;
+			  .change();
+		  }
+	  }
+  }
+  .sect2{
+	  display: flex;
+	  margin-left: 5%;
+	  justify-content: space-between;
+	  width: 90%;
+	  height: auto;
+	  h4{
+		  .fix();
+
+	  }
+	  .workone{
+		  width:30%
+	  }
+	  .worktwo{
+		width:30%
+	}
+	.workthree{
+		width:30%
+	}
+	}
+.work{
+	margin-left: 5%;
+}
+.sect3 {
+	margin: 5%;
+}
+@media (max-width: 500px){
+		
+	html{
+		width:450px;
+	}
+}
