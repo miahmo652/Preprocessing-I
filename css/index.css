@@ -194,6 +194,13 @@ header nav a {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .aboutone {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 30%;
+  }
+}
 .aboutone .subone {
   width: 60%;
   padding: 5%;
@@ -214,6 +221,12 @@ header nav a {
   background-color: lightblue;
   margin: 3%;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .aboutone .sub {
+    margin-left: 0%;
+    width: 60%;
+  }
 }
 .sect2 {
   display: flex;

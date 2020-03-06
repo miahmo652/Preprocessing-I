@@ -131,9 +131,17 @@ h3 {
   .aboutone{
 	  display: flex;
 	  flex-direction: row;
+	  @media (max-width: 500px){
+		
+		flex-direction: column;
+		
+		text-align: center;
+		margin-left: 30%;
+	}
 	  .subone{
 		  width: 60%;
 		  padding: 5%;
+		  
 	  }
 	  .sub {
 		  width: 40%;
@@ -148,6 +156,10 @@ h3 {
 			  font-size: 17px;
 			  background-color: lightblue;
 			  .change();
+		  }
+		  @media (max-width: 500px){
+			  margin-left: 0%;
+			  width: 60%;
 		  }
 	  }
   }
